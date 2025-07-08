@@ -3,72 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayatube</title>
+    <title>MyTube</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+    <div class="left-section">
+        <div class="hamdiv"><img class="ham" src="images/hamburger-menu.svg"></div>
+        <div class="logodiv"><img class="logo" src="images/mtlogo.png"></div>
+    </div>
+
+    <div class="mid-section">
     <input class="search-bar" type="text" placeholder="Search">
-
-    
-    <div class="video-preview"> 
-    <img class="thumbnail" src="images/t1.avif">
-    <p class="video-title">But what is a convolution?</p>
-    <p class="video-author">3Blue1Brown</p>
-    <p class="video-stats">3.1M views &#183 2 months ago</p>
-    </div>
-    
-    <div class="video-preview">
-    <img class="thumbnail" src="images/t2.avif">
-    <p class="video-title">I Redesigned the ENTIRE Spotify UI from Scratch</p>
-    <p>Juxtopposed</p>
-    <p>2.1M views &#183 1 year ago</p>
+    <button class="searchbtn tooltip-container"><img src="images/search.svg">
+    </button>
+    <button class="voicebtn tooltip-container"><img src="images/voice-search-icon.svg">
+    </button>
     </div>
 
-    <div class="video-preview">
-    <img class="thumbnail" src="images/t3.avif">
-    <p class="video-title">world's shortest UI/UX design course</p>
-    <p>Juxtopposed</p>
-    <p>1.7M views &#183 1 year ago</p>
-    </div>
-    
-    <div class="video-preview">
-<img class="thumbnail" src="images/t4.jpg">
-    <p class="video-title">After School Routine</p>
-    <p>Kate Brock</p>
-    <p>253K views &#183 7 months ago</p>
-    </div>
-    
-    <div class="video-preview">
-<img class="thumbnail" src="images/t5.jpg">
-    <p class="video-title">WORST to BEST: every book i read this year ranked</p>
-    <p>uncarley</p>
-    <p>400K views &#183 6 months ago</p>
-    </div>
-    
-    <div class="video-preview">
-    <img class="thumbnail" src="images/t6.jpg">
-    <p class="video-title">My 5th gap year (unempolyed)</p>
-    <p>cemeteryf0g</p>
-    <p>743K views &#183 2 months ago</p>
-    </div>
-    
-    <div class="video-preview">
-    <img class="thumbnail" src="images/t7.jpg">
-    <p class="video-title">Your Portfolio Isn’t the Problem. Your Storytelling Is.</p>
-    <p>Designare</p>
-    <p>3.7K views &#183 3 days ago</p>
-    </div>
-    
-    <div class="video-preview">
-<img class="thumbnail" src="images/t8.avif">
-    <p class="video-title">How Does This Stuff Make Sound???</p>
-    <p>This.</p>
-    <p>1.9M views &#183 1 year ago</p>
-    </div>
+    <div class='right-section'>
+            <div class="icondiv"><img class='icon' src='images/upload.svg' /></div>
+            <div class="icondiv"><img class='icon' src='images/youtube-apps.svg' /></div>
+            <div class="icondiv"><img class='icon' src='images/notifications.svg' /></div>          
+          <div class="icondiv"><img class='my-channel' src='images/myprofile.png' /></div>
+        </div>
+    </header>
 
+    <div class="sidebar">
+
+    </div>
+    <div class="video-grid">
+        <div class="video-preview"> 
+            <div class="video-row">
+                <a href="https://www.youtube.com/watch?v=KuXjwB4LzSA"> 
+                <img class="thumbnail" src="images/t1.avif"> </a>
+                <div class='video-time'>23:00</div>
+            </div>
+            <div class="info-grid">
+            <div class="profile">
+                <a href="https://www.youtube.com/@3blue1brown">
+                <img class="pfp" src="images/p1.jpg"></a>
+            </div>
+            <div class="info">
+                
+                <p class="video-title">But what is a convolution?</p>
+                <p class="video-author">3Blue1Brown</p>
+                <p class="video-stats">3.1M views &#183 2 months ago</p>
+            </div>
+            </div>
+            
+        </div>
+        
+        <div class="video-preview">
+            <div class="video-row"><a href="https://youtu.be/suhEIUapSJQ?si=H1FpTv-P2F8Reo8N"><img class="thumbnail" src="images/t2.avif"></a>
+            <div class='video-time'>19:27</div></div>
+            <div class="info-grid">
+            <div class="profile"><a href="https://www.youtube.com/@juxtopposed"><img class="pfp" src="images/p2.jpg"></a></div>
+            <div class="info">
+        <p class="video-title">I Redesigned the ENTIRE Spotify UI from Scratch</p>
+        <p class="video-author">Juxtopposed</p>
+        <p class="video-stats">2.1M views &#183 1 year ago</p>
+        </div>
+            </div>
+            </div>
+
+        <div class="video-preview">
+            <div class="video-row"><a href="https://youtu.be/wIuVvCuiJhU?si=HqXdCyq3sO2zOkY1"><img class="thumbnail" src="images/t3.avif"></a>
+            <div class='video-time'>6:53</div></div>
+            <div class="info-grid">
+
+            <div class="profile"><a href="https://www.youtube.com/@juxtopposed"><img class="pfp" src="images/p2.jpg"></a></div>
+            <div class="info">
+        <p class="video-title">world's shortest UI/UX design course</p>
+        <p class="video-author">Juxtopposed</p>
+        <p class="video-stats">1.7M views &#183 1 year ago</p>
+        </div>
+            </div>
+            </div>
+
+        
+        <div class="video-preview">
+            <div class="video-row"><a href="https://youtu.be/TC2PucDk7dI?si=ZOfmyi_qmHJK4Anq"><img class="thumbnail" src="images/t4.jpg"></a>
+            <div class='video-time'>13:34</div></div>
+            <div class="info-grid">
+            <div class="profile"> <a href="https://www.youtube.com/@katebrock_"><img class="pfp" src="images/p4.jpg"></a></div>
+            <div class="info">
+        <p class="video-title">After School Routine</p>
+        <p class="video-author">Kate Brock</p>
+        <p class="video-stats">253K views &#183 7 months ago</p>
+        </div>
+            </div>
+            </div>
+
+        
+        <div class="video-preview">
+            <div class="video-row"><a href="https://youtu.be/I9vp0scCsnw?si=-c5sUaMuKUArTCOD"><img class="thumbnail" src="images/t5.jpg"></a>
+            <div class='video-time'>1:07:21</div></div>
+            <div class="info-grid">
+            <div class="profile"><a href="https://www.youtube.com/@uncarley"><img class="pfp" src="images/p5.jpg"></a></div>
+            <div class="info">
+        <p class="video-title">WORST to BEST: every book i read this year ranked</p>
+        <p class="video-author">uncarley</p>
+        <p class="video-stats">400K views &#183 6 months ago</p>
+        </div>
+            </div>
+            </div>
+        
+        <div class="video-preview">
+            <div class="video-row"><a href="https://youtu.be/kwJ5E8VJcI0?si=oGY0ZqE_fxG8vFxH"><img class="thumbnail" src="images/t6.jpg"></a>
+            <div class='video-time'>7:53</div></div>
+            <div class="info-grid">
+            <div class="profile"><a href="https://www.youtube.com/@cemeteryf0g"><img class="pfp" src="images/P6.jpg"></a></div>
+            <div class="info">
+        <p class="video-title">My 5th gap year (unempolyed)</p>
+        <p class="video-author">cemeteryf0g</p>
+        <p class="video-stats">743K views &#183 2 months ago</p>
+        </div>
+            </div>
+            </div>
+        
+        <div class="video-preview">
+            <div class="video-row" ><a href="https://youtu.be/SVcsDDABEkM?si=Sv2Ob38YygK04ZQy"><img class="thumbnail" src="images/t7.jpg"></a>
+            <div class='video-time'>13:32</div></div>
+            <div class="info-grid">
+            <div class="profile"><a href="https://www.youtube.com/@Vox"><img class="pfp" src="images/p7.jpg"></a></div>
+            <div class="info">
+        <p class="video-title">AI art, explained</p>
+        <p class="video-author">Vox</p>
+        <p class="video-stats">2.5M views &#183 3 years ago</p>
+        </div>
+            </div>
+            </div>
+        
+        <div class="video-preview">
+            <div class="video-row"><a href="https://www.youtube.com/watch?v=-7PYX0ohST4"><img class="thumbnail" src="images/t8.avif"></a>
+            <div class='video-time'>5:36</div></div>
+            <div class="info-grid">
+            <div class="profile"><a href="https://www.youtube.com/@this.science"><img class="pfp" src="images/p8.jpg"></a></div>
+            <div class="info">
+        <p class="video-title">How Does This Stuff Make Sound???</p>
+        <p class="video-author">This.</p>
+        <p class="video-stats">1.9M views &#183 1 year ago</p>
+        </div>
+            </div>
+            </div>
+
+        <div class="video-preview">
+            <div class="video-row"><a href="https://youtu.be/6QltxZ-vPMc?si=70N8KZt1ijQvzfbP"><img class="thumbnail" src="images/t9.jpg"></a>
+            <div class='video-time'>12:44</div></div>
+                        <div class="info-grid">
+            <div class="profile"><a href="https://www.youtube.com/@_jared"><img class="pfp" src="images/p9.jpg"></a></div>
+            
+            <div class="info">
+        <p class="video-title">Why we can't focus</p>
+        <p class="video-author">Jared Henderson</p>
+        <p class="video-stats">2.4M views &#183 7 months ago</p>
+            </div>
+        </div>
+        </div>
+            
+        <div class="video-preview">
+            <div class="video-row"><a href="https://youtu.be/jcbEiZQ9B7o?si=ckAUnh-xp-aQdF24"><img class="thumbnail" src="images/t10.jpg"></a>
+            <div class='video-time'>25:46</div></div>
+            <div class="info-grid">
+            <div class="profile"><a href="https://www.youtube.com/@oliSUNvia"><img class="pfp" src="images/p10.jpg"></a></div>
+            <div class="info">
+        <p class="video-title">our conception of love is messed up.</p>
+        <p class="video-author">oliSUNvia</p>
+        <p class="video-stats">7.3M views &#183 3 years ago</p>
+            </div>
+        </div>
+        </div>
+            
+        <div class="video-preview">
+            <div class="video-row"><a href="https://youtu.be/NlBDKbWLcig?si=F7JfP9xYgJXrmgIY"><img class="thumbnail" src="images/t11.avif"></a>
+            <div class='video-time'>10:40</div></div>
+            <div class="info-grid">
+            <div class="profile"><a href="https://www.youtube.com/@carysrachell"><img class="pfp" src="images/p11.jpg"></a></div>
+            <div class="info">
+        <p class="video-title">adulting.</p>
+        <p class="video-author">carys rachel</p>
+        <p class="video-stats">145K views &#183 1 year ago</p>
+            </div>
+        </div>
+        </div>
+            
+        <div class="video-preview">
+            <div class="video-row"><a href="https://youtu.be/MqI4_gfL0Yw?si=R-UZPviV9ckA76t6"><img class="thumbnail" src="images/t12.jpg"></a>
+            <div class='video-time'>50:48</div></div>
+            <div class="info-grid">
+            <div class="profile"><a href="https://www.youtube.com/@ultravcletplaylists"><img class="pfp" src="images/p12.jpg"></a></div>
+            <div class="info">
+        <p class="video-title">A playlist to feel like you're inside of "pride and prejudice" while you're waiting for Mr. Darcy</p>
+        <p class="video-author">ultravclet</p>
+        <p class="video-stats">1.2M views &#183 4 years ago</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const thumbnails = document.querySelectorAll(".thumbnail");
+
+    thumbnails.forEach((thumbnail, index) => {
+      const originalSrc = thumbnail.src;
+      const hoverSrc = `images/g${index + 1}.webp`;
+
+      thumbnail.addEventListener("mouseover", () => {
+        thumbnail.src = hoverSrc;
+      });
+
+      thumbnail.addEventListener("mouseout", () => {
+        thumbnail.src = originalSrc;
+      });
+    });
+  });
+</script>
+</body>
+</html>
 
 </body>
 </html>

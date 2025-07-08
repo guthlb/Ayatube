@@ -1,34 +1,213 @@
+body{
+    font-family: Roboto, Arial;
+    margin:0px;
+    padding-top: 80px;
+    padding-left: 80px;
+    background-color: rgb(249, 249, 249);
+}
+p{
+    padding:0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+a {
+    color:#606060;
+    text-decoration: none;
+    font-family: Roboto, Arial;
+}
 .thumbnail {
-    width:300px; 
-    display:block
+    width:100%;
+    height: auto;
+    display:block;
+    cursor: pointer;
+    
 }
-
-.search-bar {
-    font-size: 20px;
-    margin-left: 12px;
-    padding: 10px
-    display: block;
+.video-row {
+    margin-bottom: 10px;
+    position: relative;
+    
 }
+.video-time {
+        position: absolute;
+        bottom: 7px;
+        right: 6px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        font-size: 12px;
+        padding: 4px;
+        border-radius: 2px;
+        font-weight: 500;
+      }
 
 .video-preview{
     display: inline-block;
-    margin-right: 15px;
 }
 .video-title{
-    margin:0px;
-    margin-top: 8px;
     font-weight:500;
     font-size: 14px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 12px;
+    cursor: pointer;
+    
+    color:blacl;
+    text-decoration: none;
+    font-family: Roboto, Arial;
 }
 .video-author, .video-stats {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
     color: #606060;
-    margin: 0px;
-    margin-top: 4px;
-    margin-bottom: 12px;
+    
 }
 .video-author{
-    margin:0px;
+    cursor: pointer;
+}
+
+.profile{
+    vertical-align: top;
+}
+.pfp {
+    border-radius: 50px;
+    width:40px;
+    cursor: pointer;
+}
+
+.info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+.header{
+    height: 57px;
+    display: flex;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: white;
+    z-index: 100;
+    
+}
+.left-section{
+    display:flex;
+    align-items:center;
+}
+.left-section .ham {
+        height: 24px;
+        margin-left: 24px;
+        margin-right: 24px;
+        cursor: pointer;
+}
+.left-section .logo {
+        cursor: pointer;
+}
+.mid-section{
+    display: flex;
+    flex:1;
+    max-width: 470px;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.mid-section .voicebtn {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(248, 248, 248);
+
+        display: flex;
+        justify-content: center;
+        align-items: center
+}
+
+
+.right-section {
+        display: flex;
+        align-items: center;
+        width: 182px;
+        justify-content: space-between;
+        margin-right: 24px;
+        margin-left: 29px;
+        cursor:pointer;
+      }
+
+.icondiv{
+    flex: 1;
+}
+.ham{
+    width:22px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.logo{
+    width:90px;
+    margin-right: 30px;
+}
+.search-bar {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    flex:1;
+    height: 32.67px;
+    padding-left: 12px;
+    border-width: 1px;
+    border-color: #c0c0c0;
+    border-style: solid;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,0,0.05);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 0;
+
+}
+.searchbtn{
+    height:36px;
+    width:36px;
+    background-color: #efefef;
+    border-width: 1px;
+    border-color: #c0c0c0;
+    border-style: solid;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,0,0.05);
+    border-left-width: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+}
+.voicebtn{
+    height:36px;
+    width:36px;
+    border-radius: 30px;
+    border-width: 1px;
+    border-color: #f8f8f8;
+    border-style: solid;
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,0,0.05);
+    margin-left: 16px;
+}
+.icon{
+    height:24px;
+}
+
+.my-channel{
+    height: 30px;
+    width: 30px;
+    border-radius: 22px;
+    cursor:pointer;
+}
+.sidebar{
+    position: fixed;
+    background-color: white;
+    left:0;
+    bottom:0;
+    top:55px;
+    width:72px;
 }
