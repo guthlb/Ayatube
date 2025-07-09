@@ -3,9 +3,9 @@
 
 ### Built with
 
-- **HTML** – For the overall structure and layout
-- **CSS** – For styling, layout grids, responsiveness, and animations
-- **JavaScript** – For thumbnail image previews on hover
+- **HTML** for the overall structure and layout
+- **CSS** for styling, layout grids, responsiveness, and animations
+- **JavaScript** for thumbnail image previews on hover
 
 ### Features
 
