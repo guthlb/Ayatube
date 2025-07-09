@@ -145,7 +145,7 @@ a {
 .mid-section{
     display: flex;
     flex:1;
-    max-width: 470px;
+    max-width: 500px;
     margin-left: 60px;
     display: flex;
     align-items: center;
@@ -163,7 +163,6 @@ a {
         justify-content: center;
         align-items: center
 }
-
 
 .right-section {
         display: flex;
@@ -266,7 +265,6 @@ a {
         margin-bottom: 6.5px;
       }
 
-/* 👶 Small phones */
 @media (max-width: 600px) {
   .video-grid {
     grid-template-columns: 1fr;
@@ -274,7 +272,7 @@ a {
 
   .mid-section,
   .right-section {
-    display: none; /* Hide search/icons for very small screens */
+    display: none; 
   }
 
   body {
@@ -283,11 +281,10 @@ a {
   }
 
   .sidebar {
-    display: none; /* Hide sidebar on phones */
+    display: none; 
   }
 }
 
-/* 📱 Tablets or Half-Screen Laptops */
 @media (min-width: 601px) and (max-width: 1024px) {
   .video-grid {
     grid-template-columns: 1fr 1fr;
