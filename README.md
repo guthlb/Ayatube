@@ -1,4 +1,4 @@
-# 🎞️ MyTube 
+# MyTube 
 <p><strong>Tired of YouTube? Try <a href="https://my-tube-neon.vercel.app/">MyTube</a>!</strong> <span style="font-weight: normal;">(a random selection of videos from my feed that I thought would look good on a website)</span></p>
 
 ### Built with
