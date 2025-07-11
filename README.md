@@ -5,7 +5,7 @@
 
 - **HTML** for the overall structure and layout
 - **CSS** for styling, layout grids, responsiveness, and animations
-- **JavaScript** for thumbnail image previews on hover
+- **JavaScript** for thumbnail video previews on hover
 
 ### Features
 
